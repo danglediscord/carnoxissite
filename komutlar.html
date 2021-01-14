@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Website Title -->
+    <title>CarnoxisBot - Komutlar</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="komutlar/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="komutlar/css/swiper.css" rel="stylesheet">
+	<link href="komutlar/css/magnific-popup.css" rel="stylesheet">
+	<link href="komutlar/css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/762614436690919444/799404993450344468/unknown.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+         <a class="navbar-brand logo-text page-scroll" href="index.html">CarnoxisBot</a> 
+
+        <!-- Image Logo -->
+       <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=793883542782214174&scope=bot&permissions=8">Botu Ekle</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="komutlar.html#!" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Yararlı Linkler</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="destek.html"><span class="item-text">Destek Sunucusu</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href=""><span class="item-text">Discord Bot List(yakında)</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+          <!--  <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="far fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-facebook fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>-->
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+<style>
+    .table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+table {
+	border-collapse: collapse;
+}
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+.color-bordered-table.red-bordered-table {
+	border: 2px solid #cc3939;
+}
+th {
+	text-align: left;
+}
+table th {
+	font-weight: 400;
+}
+.table td, .table th {
+	padding: .75rem;
+	vertical-align: top;
+	border-top: 1px solid #e9ecef;
+}
+.table td, .table th {
+	border-color: #cc3939;
+}
+.color-bordered-table.red-bordered-table thead th {
+	background-color: #cc3939;
+	color: #ffffff;
+}
+
+#arabenioptumseni {
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 10px 15px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+.tabs .nav-link {
+font-size: 17px;
+}
+@media screen and (max-width: 600px) {
+.tabs .nav-link {
+font-size: 13px;
+}
+}
+</style>
+<script>
+function arabenioptumseni() {
+    var input, filter, table, tr, td, i;
+    input = document.getElementById("arabenioptumseni");
+    filter = input.value.toUpperCase();
+    var tables = [];
+    for (let i = 0; i < document.getElementsByTagName("table").length; i++) {
+        tables.push(document.getElementsByTagName("table")[i]);
+    }
+    tables.forEach(t => {
+        table = t;
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    });
+}
+</script>
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br><h2>Komutlar</h2>
+					<input type="text" id="arabenioptumseni" onkeyup="arabenioptumseni()" placeholder="Komut ismi yazın.">
+                    </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="tab-content" id="xTabsContent">
+                   <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="ana-tab" data-toggle="tab" href="komutlar.html#ana" role="tab" aria-controls="ana" aria-selected="true"><i class="fas fa-home"></i>Ana Komutlar</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="genel-tab" data-toggle="tab" href="komutlar.html#genel" role="tab" aria-controls="genel" aria-selected="false"><i class="fas fa-info-circle"></i>Genel Komutlar</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="mod-tab" data-toggle="tab" href="komutlar.html#mod" role="tab" aria-controls="mod" aria-selected="false"><i class="fas fa-user-cog"></i>Yetkili Komutları</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="eglence-tab" data-toggle="tab" href="komutlar.html#eglence" role="tab" aria-controls="eglence" aria-selected="false"><i class="fas fa-futbol"></i>Eğlence Komutları</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="bot-tab" data-toggle="tab" href="komutlar.html#bot" role="tab" aria-controls="bot" aria-selected="false"><i class="fas fa-robot"></i>Bot Komutları</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="ana" role="tabpanel" aria-labelledby="ana-tab">
+<h4 style="text-align: center;" class="card-title">Ana Komutlar</h4>
+  <div class="table-responsive">
+                    <table class="table color-bordered-table red-bordered-table">
+                        <thead>
+                            <tr>
+                                <th style="width:180px;">Komut</th>
+                                <th>Açıklama</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                          <tr>
+                                <td>a?yardım</td>
+                                <td>yardım Menüsü gösterir.</td>
+                            </tr>
+                            <tr>
+                                <td>a?moderasyon</td>
+                                <td>Moderasyon komutlarını gösterir.</td>
+                            </tr>
+                            <tr>
+                                <td>a?ekonomisistemi</td>
+                                <td>Ekonomi komutlarını gösterir.</td>
+                            </tr>
+                            <tr>
+                                <td>a?yardım2</td>
+                                <td>Yardım2 Menüsünü gösterir.</td>
+                            </tr>
+							<tr>
+                                <td>a?kullanıcı</td>
+                                <td>Kullanıcı komutlarını gösterir.</td>
+                            </tr>
+					        <tr>
+                                <td>a?korumasistemi</td>
+                                <td>Koruma Sistemini gösterir.</td>
+                            </tr>	
+					                            <tr>
+                                <td>a?tagsistemi</td>
+                                <td>Tag Sistemini gösterir.</td>
+                            </tr>		
+			                            <tr>
+                                <td>a?kayıtsistemi</td>
+                                <td>Kayıt Sistemini gösterir.</td>
+				                            <tr>
+                                <td>a?logosistemi</td>
+                                <td>Logo Sistemini gösterir.</td>
+                            </tr>	
+				                            <tr>
+                                <td>a?bansistemi</td>
+                                <td>Ban sistemini gösterir.</td>
+                            </tr>			
+				                            <tr>
+                                <td>a?sunucutema</td>
+                                <td>Sunucu tema sistemini gösterir.</td>
+                            </tr>			
+                            </tr>				
+                        </tbody>
+                    </table>
+  </div>
+ </div>
+  </div>
+ <div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="genel" role="tabpanel" aria-labelledby="genel-tab">
+<h4 style="text-align: center;" class="card-title">Genel Komutlar</h4>
+  <div class="table-responsive">
+                    <table class="table color-bordered-table red-bordered-table">
+                        <thead>
+                            <tr>
+                                <th style="width:180px;">Komut</th>
+                                <th>Açıklama</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                          <tr>
+                                <td>a?grafitti</td>
+                                <td>Grafitti logo oluşturur.</td>
+                            </tr>				
+                        </tbody>
+                    </table>
+  </div>
+ </div>
+  </div> 
+  <div class="tab-pane fade" id="genel" role="tabpanel" aria-labelledby="genel-tab">
+  <h4 style="text-align: center;" class="card-title">Genel Komutlar</h4>
+  <div class="table-responsive">
+                    <table class="table color-bordered-table red-bordered-table">
+                        <thead>
+                            <tr>
+                                <th style="width:180px;">Komut</th>
+                                <th>Açıklama</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                          <tr>
+                      
+
+   <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-col">
+                        <h3>CarnoxisBot</h3>
+                        <p>...<br><br><i class="fas fa-envelope" style="color:#cc3939"></i> <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="97e5f8f8e3d7e4fefae4f2fcf5f8e3b9f4f8fa">[email&#160;protected]</a></p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-6">
+                    <div class="footer-col middle">
+                        <h4>Projelerimiz</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">CarnoxisAPI - <a class="turquoise" href="https://discord.com/oauth2/authorize?client_id=793883542782214174&scope=bot&permissions=8">Ekleyebilirsiniz.</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+								<div class="media-body">CarnoxisBotu<a class="turquoise" href="https://discord.com/oauth2/authorize?client_id=793883542782214174&scope=bot&permissions=8">Ekleyebilirsiniz.</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">CarnoxisBot © 2018-2020 - Her hakkı saklıdır. | CarnoxisBot, bir <a href="index.html">CarnoxisGRUP</a> oluşumudur.</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="komutlar/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="komutlar/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="komutlar/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="komutlar/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="komutlar/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="komutlar/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="komutlar/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="komutlar/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="komutlar/js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
